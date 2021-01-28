@@ -1,0 +1,23 @@
+{
+ "name":"个人补充",
+    "description":"薅他！",
+ "task": [
+    1 8,9 14-31/1 1 * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_bj.js, tag=宝洁美发屋, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_bj.png, enabled=true
+30 * * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_gyec.js, tag=工业品爱消除, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_gyec.png, enabled=true
+30,31 20-23/1 * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_live_redrain.js, tag=超级直播间红包雨, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_live_redrain.png, enabled=true
+0,1 19-21/1 * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_live_redrain2.js, tag=直播间红包雨, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_live_redrain2.png, enabled=true
+
+30,31 12-23/1 * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_live_redrain_half.js, tag=半点红包雨, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_live_redrain_half.png, enabled=true
+
+0 0,9,11,13,15,17,19,20,21,23 3,5,20-30/1 1,2 * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_live_redrain_nian.js, tag=年货直播红包雨, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_live_redrain_nian.png, enabled=true
+
+0 0,9,11,13,15,17,19,20,21,23 * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_live_redrain_offical.js, tag=官方号直播红包雨, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_live_redrain_offical.png, enabled=true
+
+5 0 19,20 1 * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_vote.js, tag=京年团圆pick, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_vote.png, enabled=true
+
+1 7 * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_wechat_sign.js, tag=京东粉丝专享, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_wechat_sign.png, enabled=true
+
+0 * * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_xxl.js, tag=东东爱消除, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_xxl.png, enabled=true
+40 * * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_xxl_gh.js, tag=个护爱消除, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_xxl_gh.png, enabled=true
+  ]
+}
