@@ -5,7 +5,7 @@ docker用户：
  2.只需要填下需要开团的用户名到tuanName里
  crontab：
  11 11 * * * bash jd zjdtuan
-
+##update time 2021年3月18日
 
 **/
 
