@@ -5,7 +5,7 @@ const headers = {
   'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
 }
 let login_token = '';
-const step = randomFriendPin($.getdata('xmMinStep')*1 || 20000, $.getdata('xmMaxStep')*1 || 31098);
+const step = randomFriendPin($.getdata('xmMinStep')*1 || 20000, $.getdata('xmMaxStep')*1 || 30000);
 function getToken() {
   if ($response.body) {
     const body = JSON.parse($response.body);
