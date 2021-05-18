@@ -23,6 +23,7 @@
 "0 * * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_xxl.js, tag=东东爱消除, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_xxl.png, enabled=true",
 "40 * * * * https://raw.githubusercontent.com/getkg/JD_Script/master/QuantumultX/jd_xxl_gh.js, tag=个护爱消除, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/jd_xxl_gh.png, enabled=true",
 "5 9 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/xmrun.js, tag=小米运动, img-url=https://raw.githubusercontent.com/58xinian/icon/master/xmyd.png, enabled=true",
-"10 0-23/4 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_health.js, tag=东东健康社区,  enabled=true"
+"10 0-23/4 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_health.js, tag=东东健康社区,  enabled=true",
+     "5 12 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true"
   ]
 }
