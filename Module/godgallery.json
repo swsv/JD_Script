@@ -8,6 +8,6 @@
 "2 9 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_bean_change.js, tag=京豆收入, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
 "0 * * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/xtg.js, tag=星推官, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
 "33 0,6-23/2 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_zoo.js, tag=618动物联萌, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-"0-59/30 * * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_zooCollect.js, tag=618动物联萌收集金币, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true"
+"0-59/30 * * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_zooCollect.js, tag=618动物联萌收集金币, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
   ]
 }
