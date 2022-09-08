@@ -29,3 +29,47 @@ host-suffix, itest.nz, 🌏 国外网站
 host, jdsharedresourcescdn.azureedge.net, reject
 host-suffix, github.githubassets.com, 🇭🇰 Hong Kong
 host, youku.cdn11-okzy.com, direct
+
+# 屏蔽系统更新
+;host-suffix, ns.itunes.apple.com, 🚫 广告拦截
+;host-suffix, appldnld.apple.com, 🚫 广告拦截
+;host-suffix, mesu.apple.com, 🚫 广告拦截
+;host-suffix, xp.apple.com, 🚫 广告拦截
+;host-suffix, gdmf.apple.com, 🚫 广告拦截
+
+host-suffix, api.unlimapps.com, 🍎 苹果服务
+host-suffix, cn.epochtimes.com, proxy
+host-suffix, akamaihd.net, 🌏 国外网站
+host-suffix, hdmm168.com, reject
+host-suffix, ampproject.net, 🌏 国外网站
+host-suffix, ampproject.org, 🌏 国外网站
+host-suffix, soutuibao.com, proxy
+host-suffix, zzdhcz.com, proxy
+
+
+#讯飞语记-广告拦截
+host-suffix, voiceads.cn, 🚫 广告拦截
+host-suffix, ads.voiceads.cn, 🚫 广告拦截
+host-suffix, bj.imp.voiceads.cn, 🚫 广告拦截
+host-suffix, ai.voiceads.cn, 🚫 广告拦截
+
+#🦑 蘋果の新聞-广告拦截
+host-suffix, appledaily.com.hk, 🚫 广告拦截
+host-suffix, nxtdig.com.hk, 🚫 广告拦截
+host-suffix, nextmedia.com, 🚫 广告拦截
+host-suffix, omoplanet.com, 🚫 广告拦截
+host-suffix, nxtdig.com, 🚫 广告拦截
+host-suffix, crwdcntrl.net, 🚫 广告拦截
+host-suffix, polldaddy.com, 🚫 广告拦截
+host-suffix, nexage.com, 🚫 广告拦截
+host-suffix, appledaily.com.tw, 🚫 广告拦截
+host-suffix, twnextdigital.com, 🚫 广告拦截
+host-suffix, nxtdig.com.tw, 🚫 广告拦截
+
+#📡 华文电视Pro-广告拦截
+host-suffix, mob.com, 🚫 广告拦截
+host-suffix, 5itv.tv, 🚫 广告拦截
+host-suffix, ocnttv.com, 🚫 广告拦截
+user-agent, HWTVMobile*, 🚫 广告拦截
+
+host-suffix, branch.io, proxy
