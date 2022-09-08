@@ -1,1 +1,31 @@
 DOMAIN-SUFFIX,xsus.buzz,🌍 国外网站
+host-suffix, securenetsystems.net, 🌏 国外网站
+host, biz.caiyunapp.com, proxy
+;host-suffix, rr1---sn-a5mekn6s.googlevideo.com, 🎬 YouTube
+;host-suffix, rr1---sn-a5mekn6s.googlevideo.com, 🎬 YouTube
+
+host-suffix, bugsnag.com, 🌏 国外网站
+host-suffix, onesignal.com, 🌏 国外网站
+host-suffix, branch.io, 🌏 国外网站
+host-suffix, amplitude.com, 🌏 国外网站
+host-suffix, storyly.io, 🌏 国外网站
+
+host, vod8eu55.128100.xyz, 🇭🇰 Hong Kong
+host-suffix, a3.pstatp.com, direct
+host-suffix, steampowered.com, 🌏 国外网站
+host-suffix, steamstatic.com, 🌏 国外网站
+host, sf1-ttcdn-tos.pstatp.com, direct
+host, shrtm.nu, proxy
+host-suffix, i.snssdk.com, direct
+host, imapi.snssdk.com, direct
+host-suffix, merlinblog.xyz, proxy
+-host-suffix, share.turinglabs.net, reject
+-host, share.turinglabs.net, reject
+-host-suffix, cdn.jsdelivr.net, reject
+-host, jd.turinglabs.net, reject
+-host, api.turinglabs.net, reject
+host-suffix, www.aa2.app, 🌏 国外网站
+host-suffix, itest.nz, 🌏 国外网站
+host, jdsharedresourcescdn.azureedge.net, reject
+host-suffix, github.githubassets.com, 🇭🇰 Hong Kong
+host, youku.cdn11-okzy.com, direct
