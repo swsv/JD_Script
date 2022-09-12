@@ -31,11 +31,11 @@ host-suffix, github.githubassets.com, 🇭🇰 Hong Kong
 host, youku.cdn11-okzy.com, direct
 
 # 屏蔽系统更新
-;host-suffix, ns.itunes.apple.com, 🚫 广告拦截
-;host-suffix, appldnld.apple.com, 🚫 广告拦截
-;host-suffix, mesu.apple.com, 🚫 广告拦截
-;host-suffix, xp.apple.com, 🚫 广告拦截
-;host-suffix, gdmf.apple.com, 🚫 广告拦截
+host-suffix, ns.itunes.apple.com, 🚫 广告拦截
+host-suffix, appldnld.apple.com, 🚫 广告拦截
+host-suffix, mesu.apple.com, 🚫 广告拦截
+host-suffix, xp.apple.com, 🚫 广告拦截
+host-suffix, gdmf.apple.com, 🚫 广告拦截
 
 host-suffix, api.unlimapps.com, 🍎 苹果服务
 host-suffix, cn.epochtimes.com, proxy
