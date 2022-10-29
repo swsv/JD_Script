@@ -30,7 +30,7 @@ host-suffix, itest.nz, 🌏 国外网站
 host, jdsharedresourcescdn.azureedge.net, reject
 host-suffix, github.githubassets.com, 🇭🇰 Hong Kong
 host, youku.cdn11-okzy.com, direct
-host-suffix, ntb.lanjie100.com, 🚫 广告拦截
+host, ntb.lanjie100.com, 🚫 广告拦截
 
 # 屏蔽系统更新
 host-suffix, ns.itunes.apple.com, 🚫 广告拦截
