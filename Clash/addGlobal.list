@@ -33,11 +33,11 @@ DOMAIN, youku.cdn11-okzy.com, direct
 DOMAIN-SUFFIX, ntb.lanjie100.com, 🚫 广告拦截
 
 # 屏蔽系统更新
-DOMAIN-SUFFIX, ns.itunes.apple.com, 🚫 广告拦截
-DOMAIN-SUFFIX, appldnld.apple.com, 🚫 广告拦截
-DOMAIN-SUFFIX, mesu.apple.com, 🚫 广告拦截
-DOMAIN-SUFFIX, xp.apple.com, 🚫 广告拦截
-DOMAIN-SUFFIX, gdmf.apple.com, 🚫 广告拦截
+#DOMAIN-SUFFIX, ns.itunes.apple.com, 🚫 广告拦截
+#DOMAIN-SUFFIX, appldnld.apple.com, 🚫 广告拦截
+#DOMAIN-SUFFIX, mesu.apple.com, 🚫 广告拦截
+#DOMAIN-SUFFIX, xp.apple.com, 🚫 广告拦截
+#DOMAIN-SUFFIX, gdmf.apple.com, 🚫 广告拦截
 
 DOMAIN-SUFFIX, api.unlimapps.com, 🍎 苹果服务
 DOMAIN-SUFFIX, cn.epochtimes.com, proxy
