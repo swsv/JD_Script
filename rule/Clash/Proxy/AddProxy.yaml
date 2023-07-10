@@ -2,3 +2,4 @@
 
 payload:
   - DOMAIN-KEYWORD,docker
+  - DOMAIN-SUFFIX,ubuntu.com
