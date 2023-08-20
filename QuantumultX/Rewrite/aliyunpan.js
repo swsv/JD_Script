@@ -71,7 +71,7 @@ if(!lk.isExecComm) {
             ],
             "keys": [aliYunPanTokenKey, aliYunPanRefreshTokenKey]
         }, {
-            "script_url": "https://github.com/lowking/Scripts/blob/master/ali/aliYunPanCheckIn.js",
+            "script_url": "https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/Rewrite/aliyunpan.js",
             "author": "@lowking",
             "repo": "https://github.com/lowking/Scripts",
         })
