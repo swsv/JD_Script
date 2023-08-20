@@ -11,30 +11,29 @@ Surge 4.2.0+ 脚本配置(其他APP自行转换配置):
 [Script]
 # > 阿里云盘签到
 https://auth.alipan.com/v2/account/token
-阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/Rewrite/aliyunpan.js
-阿里云盘签到 = type=cron,cronexp="0 10 0 * * ?",wake-system=1,script-path=https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/Rewrite/aliyunpan.js
+阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+阿里云盘签到 = type=cron,cronexp="0 10 0 * * ?",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
 
 [MITM]
 hostname = %APPEND% auth.alipan.com
 */
 const lk = new ToolKit(`阿里云盘签到`, `AliYunPanCheckIn`, {"httpApi": "ffff@10.0.0.19:6166"})
-
 // const aliYunPanTokenKey = 'lkAliYunPanTokenKey'
 // let aliYunPanToken = lk.getVal(aliYunPanTokenKey, '')
 // const aliYunPanRefreshTokenKey = 'lkAliYunPanRefreshTokenKey'
 // let aliYunPanRefreshToken = lk.getVal(aliYunPanRefreshTokenKey, '')
 
+// 对应第一个账号
+const aliYunPanTokenKey1 = 'lkAliYunPanTokenKey1';
+let aliYunPanToken1 = lk.getVal(aliYunPanTokenKey1, '');
+const aliYunPanRefreshTokenKey1 = 'lkAliYunPanRefreshTokenKey1';
+let aliYunPanRefreshToken1 = lk.getVal(aliYunPanRefreshTokenKey1, '');
 
-let aliYunPanTokenKey1 = 'lkAliYunPanTokenKey1'
-let aliYunPanRefreshTokenKey1 = 'lkAliYunPanRefreshTokenKey1'
-let aliYunPanToken1 = lk.getVal(aliYunPanTokenKey1, '')
-let aliYunPanRefreshToken1 = lk.getVal(aliYunPanRefreshTokenKey1, '')
-
-let aliYunPanTokenKey2 = 'lkAliYunPanTokenKey2'
-let aliYunPanRefreshTokenKey2 = 'lkAliYunPanRefreshTokenKey2'
-let aliYunPanToken2 = lk.getVal(aliYunPanTokenKey2, '')
-let aliYunPanRefreshToken2 = lk.getVal(aliYunPanRefreshTokenKey2, '')
-
+// 对应第二个账号
+const aliYunPanTokenKey2 = 'lkAliYunPanTokenKey2';
+let aliYunPanToken2 = lk.getVal(aliYunPanTokenKey2, '');
+const aliYunPanRefreshTokenKey2 = 'lkAliYunPanRefreshTokenKey2';
+let aliYunPanRefreshToken2 = lk.getVal(aliYunPanRefreshTokenKey2, '');
 
 
 const checkSignInRepeatKey = 'aliYunPanSignInRepeat'
@@ -45,7 +44,9 @@ lk.userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebK
 
 if(!lk.isExecComm) {
     if (lk.isRequest()) {
-        getCookie()
+        // getCookie()
+        getCookie1();
+        getCookie2();
         lk.done()
     } else {
         lk.boxJsJsonBuilder({
@@ -74,77 +75,98 @@ if(!lk.isExecComm) {
             "author": "@lowking",
             "repo": "https://github.com/lowking/Scripts",
         })
-        all()
+        // all()
+        await all(1);
+        await all(2);
     }
 }
 
-function getCookie() {
+// function getCookie() {
+//     if (lk.isGetCookie(/\/v2\/account\/token/)) {
+//         lk.log(`开始获取cookie`)
+//         let data = lk.getResponseBody()
+//         // lk.log(`获取到的cookie：${data}`)
+//         try {
+//             data = JSON.parse(data)
+//             let refreshToken = data["refresh_token"]
+//             if (refreshToken) {
+//                 lk.setVal(aliYunPanRefreshTokenKey, refreshToken)
+//                 lk.appendNotifyInfo('🎉成功获取阿里云盘refresh_token，可以关闭相应脚本')
+//             } else {
+//                 lk.execFail()
+//                 lk.appendNotifyInfo('❌获取阿里云盘token失败，请稍后再试')
+//             }
+//         } catch (e) {
+//             lk.execFail()
+//             lk.appendNotifyInfo('❌获取阿里云盘token失败')
+//         }
+//         lk.msg('')
+//     }
+// }
+
+function getCookie1() {
     if (lk.isGetCookie(/\/v2\/account\/token/)) {
-        lk.log(`开始获取cookie`)
+        lk.log(`开始获取cookie for Account 1`)
         let data = lk.getResponseBody()
-        // lk.log(`获取到的cookie：${data}`)
         try {
             data = JSON.parse(data)
             let refreshToken = data["refresh_token"]
             if (refreshToken) {
-                lk.setVal(aliYunPanRefreshTokenKey, refreshToken)
-                lk.appendNotifyInfo('🎉成功获取阿里云盘refresh_token，可以关闭相应脚本')
+                lk.setVal(aliYunPanRefreshTokenKey1, refreshToken)
+                lk.appendNotifyInfo('🎉成功获取阿里云盘 Account 1 refresh_token，可以关闭相应脚本')
             } else {
                 lk.execFail()
-                lk.appendNotifyInfo('❌获取阿里云盘token失败，请稍后再试')
+                lk.appendNotifyInfo('❌获取阿里云盘 Account 1 token失败，请稍后再试')
             }
         } catch (e) {
             lk.execFail()
-            lk.appendNotifyInfo('❌获取阿里云盘token失败')
+            lk.appendNotifyInfo('❌获取阿里云盘 Account 1 token失败')
         }
         lk.msg('')
     }
 }
 
+function getCookie2() {
+    if (lk.isGetCookie(/\/v2\/account\/token/)) {
+        lk.log(`开始获取cookie for Account 2`)
+        let data = lk.getResponseBody()
+        try {
+            data = JSON.parse(data)
+            let refreshToken = data["refresh_token"]
+            if (refreshToken) {
+                lk.setVal(aliYunPanRefreshTokenKey2, refreshToken)
+                lk.appendNotifyInfo('🎉成功获取阿里云盘 Account 2 refresh_token，可以关闭相应脚本')
+            } else {
+                lk.execFail()
+                lk.appendNotifyInfo('❌获取阿里云盘 Account 2 token失败，请稍后再试')
+            }
+        } catch (e) {
+            lk.execFail()
+            lk.appendNotifyInfo('❌获取阿里云盘 Account 2 token失败')
+        }
+        lk.msg('')
+    }
+}
+
+
 // async function all() {
-//     let hasNeedSendNotify = true
-//     if (aliYunPanRefreshToken == '') {
-//         lk.execFail()
-//         lk.appendNotifyInfo(`⚠️请先打开阿里云盘登录获取refresh_token`)
-//     } else {
-//         await refreshToken()
-//         let hasAlreadySignIn = await signIn()
-//         await joinTeam()
-//     }
-//     if (hasNeedSendNotify) {
-//         lk.msg(``)
-//     }
-//     lk.done()
-// }
-
-
-async function all() {
+async function all(accountNumber) {
+        const aliYunPanRefreshToken = accountNumber === 1 ? aliYunPanRefreshToken1 : aliYunPanRefreshToken2;
+        const aliYunPanToken = accountNumber === 1 ? aliYunPanToken1 : aliYunPanToken2;
     let hasNeedSendNotify = true
-    if (aliYunPanRefreshToken1 == '') {
+    if (aliYunPanRefreshToken == '') {
         lk.execFail()
-        lk.appendNotifyInfo(`⚠️请先为账户1打开阿里云盘登录获取refresh_token`)
+        lk.appendNotifyInfo(`⚠️请先打开阿里云盘登录获取refresh_token`)
     } else {
-        await refreshToken(1)
-        let hasAlreadySignIn1 = await signIn(1)
-        await joinTeam(1)
+        await refreshToken()
+        let hasAlreadySignIn = await signIn()
+        await joinTeam()
     }
-    
-    if (aliYunPanRefreshToken2 == '') {
-        lk.execFail()
-        lk.appendNotifyInfo(`⚠️请先为账户2打开阿里云盘登录获取refresh_token`)
-    } else {
-        await refreshToken(2)
-        let hasAlreadySignIn2 = await signIn(2)
-        await joinTeam(2)
-    }
-
     if (hasNeedSendNotify) {
         lk.msg(``)
     }
     lk.done()
 }
-
-
 
 function refreshToken() {
     return new Promise((resolve, _reject) => {
