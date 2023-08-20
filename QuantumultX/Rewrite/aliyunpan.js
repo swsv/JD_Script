@@ -73,7 +73,7 @@ if(!lk.isExecComm) {
         }, {
             "script_url": "https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/Rewrite/aliyunpan.js",
             "author": "@lowking",
-            "repo": "https://github.com/lowking/Scripts",
+            "repo": "https://github.com/swsv/JD_Script",
         })
         // all()
         await all(1);
