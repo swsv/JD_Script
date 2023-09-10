@@ -3,3 +3,4 @@
 payload:
   - DOMAIN-KEYWORD,docker
   - DOMAIN-SUFFIX,ubuntu.com
+  - DOMAIN-SUFFIX,swccd.edu
