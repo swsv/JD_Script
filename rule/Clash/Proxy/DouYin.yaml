@@ -1,71 +1,63 @@
-# NAME: Douyin-From-Logs
-# DESC: Extracted domains & IPs from your Clash logs (exact match + /32 CIDRs)
+# NAME: Douyin-Compact
+# DESC: Domains collapsed to DOMAIN-SUFFIX; IPs aggregated to CIDRs from your logs
 # GENERATED: 2025-09-09T09:00+09:00
 
 payload:
-  # === Domains ===
-  - DOMAIN,pc-mon.zijieapi.com
-  - DOMAIN,www.douyin.com
-  - DOMAIN,api.amemv.com
-  - DOMAIN,lf-normal-gr-sourcecdn.bytegecko.com
-  - DOMAIN,lf-douyin-pc-web.douyinstatic.com
-  - DOMAIN,lf-security.bytegoofy.com
-  - DOMAIN,p3-pc-sign.douyinpic.com
-  - DOMAIN,lf3-short.ibytedapm.com
-  - DOMAIN,dig.bdurl.net
-  - DOMAIN,privacy.zijieapi.com
-  - DOMAIN,p-pc-weboff.byteimg.com
-  - DOMAIN,p3-pc.douyinpic.com
-  - DOMAIN,v3-web.douyinvod.com
-  - DOMAIN,p9-pc-sign.douyinpic.com
-  - DOMAIN,mssdk.bytedance.com
+  # === Domains (suffix) ===
+  - DOMAIN-SUFFIX,zijieapi.com
+  - DOMAIN-SUFFIX,douyin.com
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,bytegecko.com
+  - DOMAIN-SUFFIX,douyinstatic.com
+  - DOMAIN-SUFFIX,bytegoofy.com
+  - DOMAIN-SUFFIX,douyinpic.com
+  - DOMAIN-SUFFIX,ibytedapm.com
+  - DOMAIN-SUFFIX,byteimg.com
+  - DOMAIN-SUFFIX,douyinvod.com
+  - DOMAIN-SUFFIX,bytedance.com
+  - DOMAIN-SUFFIX,bdurl.net
 
-  # === IPs (as /32) ===
-  - IP-CIDR,42.202.219.193/32
-  - IP-CIDR,123.184.145.171/32
-  - IP-CIDR,42.202.219.177/32
-  - IP-CIDR,42.202.208.193/32
-  - IP-CIDR,123.184.145.167/32
-  - IP-CIDR,42.202.219.187/32
-  - IP-CIDR,123.184.145.168/32
-  - IP-CIDR,49.7.47.99/32
-  - IP-CIDR,123.184.144.75/32
-  - IP-CIDR,49.7.200.11/32
-  - IP-CIDR,42.202.208.194/32
-  - IP-CIDR,123.184.145.104/32
-  - IP-CIDR,42.202.219.176/32
-  - IP-CIDR,123.246.91.105/32
-  - IP-CIDR,42.202.160.106/32
-  - IP-CIDR,42.202.222.31/32
-  - IP-CIDR,123.184.145.174/32
-  - IP-CIDR,140.249.88.236/32
-  - IP-CIDR,42.202.154.85/32
+  # === IPs (aggregated) ===
+  # 42.202.x.x 系列
+  - IP-CIDR,42.202.154.0/24
+  - IP-CIDR,42.202.156.0/24
+  - IP-CIDR,42.202.158.0/24
+  - IP-CIDR,42.202.160.0/24
+  - IP-CIDR,42.202.168.0/24    # 包含 .119 .122
+  - IP-CIDR,42.202.208.0/24    # 包含 .193 .194 .200 .209 .212
+  - IP-CIDR,42.202.218.0/24    # 包含 .204 .164
+  - IP-CIDR,42.202.219.0/24    # 包含 .176 .177 .187 .193
+  - IP-CIDR,42.202.222.0/24    # 包含 .8 .31
+
+  # 123.184.x.x 系列
+  - IP-CIDR,123.184.144.0/24   # 包含 .75
+  - IP-CIDR,123.184.145.0/24   # 包含 .85 .96 .104 .106 .167 .168 .171 .174
+  - IP-CIDR,123.184.27.0/24    # 包含 .8
+
+  # 123.186/187/246/247
+  - IP-CIDR,123.186.145.0/24   # 包含 .99
+  - IP-CIDR,123.187.47.0/24    # 包含 .186
+  - IP-CIDR,123.187.60.0/24    # 包含 .222
+  - IP-CIDR,123.246.91.0/24    # 包含 .105
+  - IP-CIDR,123.247.80.0/24    # 包含 .182
+
+  # 182.x.x.x 系列
+  - IP-CIDR,182.201.242.0/24   # 包含 .52 .53
+  - IP-CIDR,182.203.4.0/24     # 包含 .194 .210
+
+  # 49.7.x.x 分散
+  - IP-CIDR,49.7.47.0/24       # 包含 .99
+  - IP-CIDR,49.7.200.0/24      # 包含 .11
+
+  # 其它散点（保留 /24 以便扩展；如需更严谨可改回 /32）
+  - IP-CIDR,36.99.122.0/24     # 包含 .178
+  - IP-CIDR,61.189.3.0/24      # 包含 .22
+  - IP-CIDR,106.38.222.0/24    # 包含 .184
+  - IP-CIDR,120.226.77.0/24    # 包含 .40
+  - IP-CIDR,140.249.88.0/24    # 包含 .236
+  - IP-CIDR,150.139.243.0/24   # 包含 .116
+  - IP-CIDR,219.151.136.0/24   # 包含 .164
+  - IP-CIDR,222.170.203.0/24   # 包含 .237
+
+  # 明确仅见到单点，保持精确匹配
   - IP-CIDR,42.100.51.51/32
-  - IP-CIDR,42.202.168.119/32
-  - IP-CIDR,42.202.218.204/32
-  - IP-CIDR,36.99.122.178/32
-  - IP-CIDR,42.202.156.38/32
-  - IP-CIDR,42.202.208.200/32
-  - IP-CIDR,42.202.158.241/32
-  - IP-CIDR,106.38.222.184/32
-  - IP-CIDR,123.247.80.182/32
-  - IP-CIDR,113.24.210.15/32
-  - IP-CIDR,123.184.27.8/32
-  - IP-CIDR,123.184.145.106/32
-  - IP-CIDR,123.184.145.85/32
-  - IP-CIDR,182.201.242.53/32
-  - IP-CIDR,123.186.145.99/32
-  - IP-CIDR,182.203.4.210/32
-  - IP-CIDR,42.202.222.8/32
-  - IP-CIDR,42.202.208.212/32
-  - IP-CIDR,222.170.203.237/32
-  - IP-CIDR,219.151.136.164/32
-  - IP-CIDR,150.139.243.116/32
-  - IP-CIDR,42.202.218.164/32
-  - IP-CIDR,61.189.3.22/32
-  - IP-CIDR,123.187.60.222/32
-  - IP-CIDR,123.187.47.186/32
-  - IP-CIDR,120.226.77.40/32
-  - IP-CIDR,182.203.4.194/32
-  - IP-CIDR,182.201.242.52/32
-  - IP-CIDR,42.202.168.122/32
