@@ -1,6 +1,6 @@
 # NAME: Douyin-Complete-Final
 # DESC: Douyin/Bytedance domains collapsed to DOMAIN-SUFFIX; all provided IPs aggregated
-# UPDATED: 2025-09-11T21:30+08:00
+# UPDATED: 2025-09-11T21:45+08:00
 
 payload:
   # === Domains (suffix) ===
@@ -61,6 +61,10 @@ payload:
   # 101.x
   - IP-CIDR,101.47.85.0/24
 
+  # 103.x
+  - IP-CIDR,103.235.45.0/24
+  - IP-CIDR,103.136.221.0/24   # 新增
+
   # 106.x
   - IP-CIDR,106.38.222.0/24
 
@@ -80,7 +84,7 @@ payload:
   # 120.x
   - IP-CIDR,120.226.77.0/24
 
-  # 123.x (Bytedance 常见段)
+  # 123.x
   - IP-CIDR,123.184.27.0/24
   - IP-CIDR,123.184.144.0/24
   - IP-CIDR,123.184.145.0/24
