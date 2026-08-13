@@ -1,9 +1,9 @@
+DOMAIN-SUFFIX, workers.dev, 🌏 国外网站
+DOMAIN-SUFFIX, x.com, 🌏 国外网站
 DOMAIN-SUFFIX, 64clouds.com, 🌏 国外网站
-DOMAIN-SUFFIX, xsus.io, 🌏 国外网站
+DOMAIN-KEYWORD, xsus, 🌏 国外网站
 DOMAIN-SUFFIX, securenetsystems.net, 🌏 国外网站
 DOMAIN, biz.caiyunapp.com, proxy
-;DOMAIN-SUFFIX, rr1---sn-a5mekn6s.googlevideo.com, 🎬 YouTube
-;DOMAIN-SUFFIX, rr1---sn-a5mekn6s.googlevideo.com, 🎬 YouTube
 
 DOMAIN-SUFFIX, bugsnag.com, 🌏 国外网站
 DOMAIN-SUFFIX, onesignal.com, 🌏 国外网站
@@ -12,8 +12,6 @@ DOMAIN-SUFFIX, amplitude.com, 🌏 国外网站
 DOMAIN-SUFFIX, storyly.io, 🌏 国外网站
 DOMAIN-SUFFIX, sub-store.vercel.app, 🌏 国外网站
 
-DOMAIN, vod8eu55.128100.xyz, 🇭🇰 Hong Kong
-DOMAIN-SUFFIX, a3.pstatp.com, direct
 DOMAIN-SUFFIX, steampowered.com, 🌏 国外网站
 DOMAIN-SUFFIX, steamstatic.com, 🌏 国外网站
 DOMAIN, sf1-ttcdn-tos.pstatp.com, direct
@@ -21,58 +19,15 @@ DOMAIN, shrtm.nu, proxy
 DOMAIN-SUFFIX, i.snssdk.com, direct
 DOMAIN, imapi.snssdk.com, direct
 DOMAIN-SUFFIX, merlinblog.xyz, proxy
--DOMAIN-SUFFIX, share.turinglabs.net, reject
--DOMAIN, share.turinglabs.net, reject
--DOMAIN-SUFFIX, cdn.jsdelivr.net, reject
--DOMAIN, jd.turinglabs.net, reject
--DOMAIN, api.turinglabs.net, reject
-DOMAIN-SUFFIX, www.aa2.app, 🌏 国外网站
-DOMAIN-SUFFIX, itest.nz, 🌏 国外网站
-DOMAIN, jdsharedresourcescdn.azureedge.net, reject
-DOMAIN-SUFFIX, github.githubassets.com, 🇭🇰 Hong Kong
+
 DOMAIN, youku.cdn11-okzy.com, direct
 DOMAIN-SUFFIX, ntb.lanjie100.com, 🚫 广告拦截
 
-# 屏蔽系统更新
-#DOMAIN-SUFFIX, ns.itunes.apple.com, 🚫 广告拦截
-#DOMAIN-SUFFIX, appldnld.apple.com, 🚫 广告拦截
-#DOMAIN-SUFFIX, mesu.apple.com, 🚫 广告拦截
-#DOMAIN-SUFFIX, xp.apple.com, 🚫 广告拦截
-#DOMAIN-SUFFIX, gdmf.apple.com, 🚫 广告拦截
+
 
 DOMAIN-SUFFIX, api.unlimapps.com, 🍎 苹果服务
 DOMAIN-SUFFIX, cn.epochtimes.com, proxy
-DOMAIN-SUFFIX, akamaihd.net, 🌏 国外网站
-DOMAIN-SUFFIX, hdmm168.com, reject
-DOMAIN-SUFFIX, ampproject.net, 🌏 国外网站
-DOMAIN-SUFFIX, ampproject.org, 🌏 国外网站
-DOMAIN-SUFFIX, soutuibao.com, proxy
-DOMAIN-SUFFIX, zzdhcz.com, proxy
 
 
-#讯飞语记-广告拦截
-DOMAIN-SUFFIX, voiceads.cn, 🚫 广告拦截
-DOMAIN-SUFFIX, ads.voiceads.cn, 🚫 广告拦截
-DOMAIN-SUFFIX, bj.imp.voiceads.cn, 🚫 广告拦截
-DOMAIN-SUFFIX, ai.voiceads.cn, 🚫 广告拦截
 
-#🦑 蘋果の新聞-广告拦截
-DOMAIN-SUFFIX, appledaily.com.hk, 🚫 广告拦截
-DOMAIN-SUFFIX, nxtdig.com.hk, 🚫 广告拦截
-DOMAIN-SUFFIX, nextmedia.com, 🚫 广告拦截
-DOMAIN-SUFFIX, omoplanet.com, 🚫 广告拦截
-DOMAIN-SUFFIX, nxtdig.com, 🚫 广告拦截
-DOMAIN-SUFFIX, crwdcntrl.net, 🚫 广告拦截
-DOMAIN-SUFFIX, polldaddy.com, 🚫 广告拦截
-DOMAIN-SUFFIX, nexage.com, 🚫 广告拦截
-DOMAIN-SUFFIX, appledaily.com.tw, 🚫 广告拦截
-DOMAIN-SUFFIX, twnextdigital.com, 🚫 广告拦截
-DOMAIN-SUFFIX, nxtdig.com.tw, 🚫 广告拦截
-
-#📡 华文电视Pro-广告拦截
-DOMAIN-SUFFIX, mob.com, 🚫 广告拦截
-DOMAIN-SUFFIX, 5itv.tv, 🚫 广告拦截
-DOMAIN-SUFFIX, ocnttv.com, 🚫 广告拦截
-user-agent, HWTVMobile*, 🚫 广告拦截
-
-DOMAIN-SUFFIX, branch.io, proxy
+DOMAIN-SUFFIX, branch.io, 🌏 国外网站
