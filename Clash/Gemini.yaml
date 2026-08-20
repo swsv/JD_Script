@@ -1,0 +1,31 @@
+payload:
+  # === 基础 Web 页面与服务 ===
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,deepmind.com
+  - DOMAIN-SUFFIX,deepmind.google
+
+  # === AI Studio & 开发者平台 ===
+  - DOMAIN,ai.google.dev
+  - DOMAIN,aistudio.google.com
+  - DOMAIN,makersuite.google.com
+
+  # === NotebookLM ===
+  - DOMAIN,notebooklm.google
+  - DOMAIN-SUFFIX,notebooklm.google.com
+
+  # === API 及后台服务支持 ===
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,apis.google.com
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,alkalipipeline-pa.clients6.google.com
+  - DOMAIN,waa-pa.clients6.google.com
+  - DOMAIN,cloudaicompanion-pa.googleapis.com
+
+  # === 关键字匹配 ===
+  - DOMAIN-KEYWORD,colab
+  - DOMAIN-KEYWORD,developerprofiles
+  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,alkali
