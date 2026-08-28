@@ -1,0 +1,14 @@
+{
+    "name":"个人补充",
+    "description":"薅他！",
+ "task": [
+
+"5 9 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/xmrun.js, tag=小米运动, img-url=https://raw.githubusercontent.com/58xinian/icon/master/xmyd.png, enabled=true",
+"5 12 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true",
+"2 9 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_bean_change.js, tag=京豆收入, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+"0 * * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/xtg.js, tag=星推官, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+"33 0,6-23/2 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_zoo.js, tag=618动物联萌, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+"0-59/30 * * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/jd_zooCollect.js, tag=618动物联萌收集金币, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+"2 0-23/4 * * * https://raw.githubusercontent.com/swsv/JD_Script/master/QuantumultX/cash.js, tag=签到领现金, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+  ]
+}

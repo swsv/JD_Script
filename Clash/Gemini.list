@@ -1,0 +1,37 @@
+# NAME: Gemini Full
+# UPDATED: 2026-08-13
+# DOMAIN: 8
+# DOMAIN-KEYWORD: 5
+# DOMAIN-SUFFIX: 11
+# TOTAL: 24
+
+# === 基础 Web 页面与服务 ===
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# === AI Studio & 开发者平台 ===
+DOMAIN,ai.google.dev
+DOMAIN,aistudio.google.com
+DOMAIN,makersuite.google.com
+
+# === NotebookLM (Google AI 笔记) ===
+DOMAIN,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+
+# === API 及后台服务支持 ===
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,alkalipipeline-pa.clients6.google.com
+DOMAIN,waa-pa.clients6.google.com
+DOMAIN,cloudaicompanion-pa.googleapis.com
+
+# === 关键字匹配（补全底层 API 与开发环境） ===
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,alkali
